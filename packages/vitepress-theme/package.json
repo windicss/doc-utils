@@ -1,0 +1,35 @@
+{
+  "name": "@windicss/vitepress-theme",
+  "version": "0.1.0",
+  "description": "VitePress theme for windicss docs site",
+  "author": "Han <me@hanlee.co>",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@docsearch/css": "^1.0.0-alpha.28",
+    "@docsearch/js": "^1.0.0-alpha.28",
+    "@docsearch/react": "^1.0.0-alpha.28",
+    "@vueuse/core": "^4.11.0",
+    "@vueuse/integrations": "^4.11.0",
+    "@windicss/shared-components": "workspace:*",
+    "axios": "^0.21.1",
+    "codemirror-theme-vars": "^0.1.1",
+    "codemirror": "^5.61.0",
+    "json5": "^2.2.0",
+    "lz-string": "^1.4.4",
+    "mitt": "^2.1.0",
+    "prismjs": "^1.23.0",
+    "prism-theme-vars": "^0.2.2",
+    "splitpanes": "^3.0.4",
+    "vue": "^3.0.11",
+    "vue-board": "^0.0.5",
+    "vue-demi": "^0.9.0",
+    "windicss": "^3.0.4"
+  },
+  "devDependencies": {
+    "@iconify/json": "^1.1.343",
+    "vitepress": "^0.13.2"
+  }
+}

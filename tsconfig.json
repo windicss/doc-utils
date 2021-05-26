@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "webworker"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "paths": {
+      "@windicss/vitepress-theme": ["./packages/vitepress-theme/*"],
+      "@windicss/shared-components": ["./packages/shared-components/src/index.ts"],
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.vue",
+  ],
+  "exclude": [
+    "dist",
+    "packages/.shared-components"
+  ]
+}
