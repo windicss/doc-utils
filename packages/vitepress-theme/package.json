@@ -5,7 +5,7 @@
   "author": "Han <me@hanlee.co>",
   "license": "MIT",
   "scripts": {
-    "release": "bumpp --commit 'chore(vitepress-theme): release v' --push && npm publish",
+    "release": "bumpp --commit 'chore(vitepress-theme): release v' --push && pnpm publish",
     "link": "pnpm link"
   },
   "dependencies": {

@@ -12,7 +12,7 @@
   "scripts": {
     "prepublishOnly": "tsup",
     "build": "tsup",
-    "release": "bumpp --commit 'chore(shared-components): release v' --push && npm publish",
+    "release": "bumpp --commit 'chore(shared-components): release v' --push && pnpm publish",
     "link": "pnpm link"
   },
   "author": "Han <me@hanlee.co>",
