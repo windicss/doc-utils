@@ -31,7 +31,7 @@ const hasFeatures = computed(() => {
   return data.value.features && data.value.features.length > 0
 })
 
-const features = computed(() => {
+const features = computed<Record<string, any>[]>(() => {
   return data.value.features ? data.value.features : []
 })
 </script>
