@@ -28,8 +28,8 @@
           </div>
         </div>
       </div>
-      <a class="bg-primary rounded font-bold bg-opacity-10 text-center py-4 px-8 block" href="/posts/v30.html">
-        🎉 v3.0 is now out with a bunch of exciting new features!
+      <a v-if="hasNewsLink" class="bg-primary rounded font-bold bg-opacity-10 text-center py-4 px-8 block" :href="newsLink">
+        {{ newsTitle }}
       </a>
     </div>
   </header>
@@ -42,6 +42,21 @@ import { useSiteDataByRoute, useFrontmatter } from 'vitepress'
 const site = useSiteDataByRoute()
 const data = useFrontmatter()
 
+const hasHeroText = computed(() => data.value.heroText !== null)
+const heroText = computed(() => data.value.heroText || site.value.title)
+
+const hasTagline = computed(() => data.value.tagline !== null)
+const tagline = computed(() => data.value.tagline || site.value.description)
+
+const hasNewsLink = computed(() => data.value.newsTitle && data.value.newsLink)
+const newsTitle = computed(() => data.value.newsTitle)
+const newsLink = computed(() => data.value.newsLink)
+
+const hasAction = computed(() => data.value.actionLink && data.value.actionText)
+const hasAltAction = computed(
+  () => data.value.altActionLink && data.value.altActionText,
+)
+
 const showHero = computed(() => {
   return (
     data.value.heroImage
@@ -50,17 +65,6 @@ const showHero = computed(() => {
     || hasAction.value
   )
 })
-
-const hasHeroText = computed(() => data.value.heroText !== null)
-const heroText = computed(() => data.value.heroText || site.value.title)
-
-const hasTagline = computed(() => data.value.tagline !== null)
-const tagline = computed(() => data.value.tagline || site.value.description)
-
-const hasAction = computed(() => data.value.actionLink && data.value.actionText)
-const hasAltAction = computed(
-  () => data.value.altActionLink && data.value.altActionText,
-)
 </script>
 
 <style scoped lang="postcss">
