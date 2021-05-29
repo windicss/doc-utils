@@ -1,6 +1,6 @@
 <template>
   <a
-    class="nav-bar-title"
+    class="navbar-title"
     :href="$withBase($localePath)"
     :aria-label="`${$siteByRoute.title}, back to home`"
   >
@@ -15,7 +15,7 @@
 </template>
 
 <style scoped lang="postcss">
-.nav-bar-title {
+.navbar-title {
   @apply
     text-xl md:text-1.3rem font-semibold text-$c-text
     inline-flex items-center whitespace-nowrap mr-4

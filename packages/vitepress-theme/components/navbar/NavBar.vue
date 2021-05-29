@@ -1,5 +1,5 @@
 <template>
-  <header class="nav-bar" :class="{'lg:ml-$sidebar-width': sidebarState}">
+  <header class="navbar" :class="{'lg:ml-$sidebar-width': sidebarState}">
     <NavBarTitle :class="{'!lg:hidden': sidebarState}" />
     <div class="hidden lg:flex px-3">
       <NavBarLinks />
@@ -27,17 +27,13 @@ defineProps({
 </script>
 
 <style scoped lang="postcss">
-.nav-bar {
+.navbar {
   @apply
     fixed top-0 inset-x-0 z-$z-index-navbar
-    flex space-between align-center select-none
-    border-b-1px border-$c-divider
-    py-0.7rem px-4
+    flex space-between align-center
+    py-0.7rem px-4 md:px-5 lg:px-6
     h-$header-height bg-$c-bg
-    md:px-5 lg:px-6;
-}
-
-.nav-bar.root {
-  @apply border-transparent bg-$c-bg-semi;
+    border-b-1px border-$c-divider
+    select-none;
 }
 </style>
