@@ -1,13 +1,13 @@
 <template>
-  <div v-if="hasLinks" class="next-and-prev-link">
-    <div class="container">
-      <div class="prev">
+  <div v-if="hasLinks" class="pt-4">
+    <div class="flex justify-between border-t-1px border-$c-divider pt-4">
+      <div class="flex flex-shrink-0 pl-3">
         <a v-if="prev" class="link" :href="$withBase(prev.link)">
           <carbon-arrow-left class="icon icon-prev" />
           <span class="text">{{ prev.text }}</span>
         </a>
       </div>
-      <div class="next">
+      <div class="flex flex-shrink-0 pr-3">
         <a v-if="next" class="link" :href="$withBase(next.link)">
           <span class="text">{{ next.text }}</span>
           <carbon-arrow-right class="icon icon-next" />
@@ -24,34 +24,6 @@ const { hasLinks, prev, next } = useNextAndPrevLinks()
 </script>
 
 <style scoped>
-.next-and-prev-link {
-  padding-top: 1rem;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid var(--c-divider);
-  padding-top: 1rem;
-}
-
-.prev,
-.next {
-  display: flex;
-  flex-shrink: 0;
-  width: 50%;
-}
-
-.prev {
-  justify-content: flex-start;
-  padding-right: 12px;
-}
-
-.next {
-  justify-content: flex-end;
-  padding-left: 12px;
-}
-
 .link {
   display: inline-flex;
   align-items: center;
