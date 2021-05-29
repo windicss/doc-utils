@@ -38,13 +38,13 @@ function download(filename: string, textInput: string) {
   window.URL.revokeObjectURL(url)
 }
 
+type ComponentType = 'vue' | 'react' | 'svelte'
+
 const filename: Record<ComponentType, string> = {
   vue: 'windicss.vue',
   react: 'windicss.tsx',
   svelte: 'windicss.svelte',
 }
-
-type ComponentType = 'vue' | 'react' | 'svelte'
 
 export function useEmitShare(html: Ref<string>, css: Ref<string>) {
   const url = computed(() => getShareURL(html.value, css.value))

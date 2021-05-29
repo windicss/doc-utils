@@ -1,5 +1,9 @@
 // types shared between server and client
 
+export type HeadConfig =
+  | [string, Record<string, string>]
+  | [string, Record<string, string>, string]
+
 export interface LocaleConfig {
   lang: string
   title?: string
@@ -20,9 +24,11 @@ export interface SiteData<ThemeConfig = any> {
   customData: any
 }
 
-export type HeadConfig =
-  | [string, Record<string, string>]
-  | [string, Record<string, string>, string]
+export interface Header {
+  level: number
+  title: string
+  slug: string
+}
 
 export interface PageData {
   relativePath: string
@@ -31,10 +37,4 @@ export interface PageData {
   headers: Header[]
   frontmatter: Record<string, any>
   lastUpdated: number
-}
-
-export interface Header {
-  level: number
-  title: string
-  slug: string
 }

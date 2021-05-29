@@ -79,8 +79,8 @@ const showHero = computed(() => {
     bg-$c-brand border-2px border-$c-brand transition-colors
     xs:(text-xl px-5 py-2.8)
     hover:(bg-$c-brand-light border-$c-brand-light);
-}
-.link-btn.alt {
-  @apply bg-transparent text-primary hover:text-primary-light;
+  &.alt {
+    @apply bg-transparent text-primary hover:text-primary-light;
+  }
 }
 </style>

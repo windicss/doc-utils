@@ -14,7 +14,8 @@
     "paths": {
       "@windicss/vitepress-theme": ["./packages/vitepress-theme/*"],
       "@windicss/shared-components": ["./packages/shared-components/src/index.ts"],
-    }
+    },
+    "types": ["vite/client"]
   },
   "include": [
     "**/*.ts",

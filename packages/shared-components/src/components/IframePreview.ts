@@ -28,6 +28,9 @@ export default defineComponent({
     onMounted(createSandBox)
 
     const container = ref<HTMLElement | null>(null)
+    const isReady = ref(false)
+    const propRefs = toRefs(props)
+
     let sandbox: HTMLIFrameElement
 
     function createSandBox() {
@@ -51,9 +54,6 @@ export default defineComponent({
         isReady.value = true
       })
     }
-
-    const isReady = ref(false)
-    const propRefs = toRefs(props)
 
     for (const key of Object.keys(propRefs) as (keyof typeof propRefs)[]) {
       watchEffect(() => {

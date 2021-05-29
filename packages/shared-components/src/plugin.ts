@@ -15,8 +15,8 @@ import { classHighlightStyle } from '@codemirror/highlight'
 import { lintKeymap } from '@codemirror/lint'
 
 import { hoverTooltip } from '@codemirror/tooltip'
-import { usePrismCSS } from './usePrismCSS'
 import type Processor from 'windicss'
+import { usePrismCSS } from './usePrismCSS'
 
 const tabSize = new Compartment()
 
@@ -64,7 +64,7 @@ export const hoverPreview = (processor: Processor) => {
         pos: start,
         end,
         above: true,
-        create(view) {
+        create() {
           const dom = document.createElement('div')
           const { highlightedCSS } = usePrismCSS(() => result.styleSheet.build())
           dom.className = 'text-sm border p-2 rounded !bg-dark-300'

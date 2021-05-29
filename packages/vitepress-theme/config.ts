@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable-next-line @typescript-eslint/no-namespace */
 export namespace DefaultTheme {
   export interface Config {

@@ -6,6 +6,9 @@
 //   }
 // }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as vue from '@vue/runtime-core'
+
 declare module '*.vue' {
   // eslint-disable-next-line import/no-duplicates
   import { ComponentOptions } from 'vue'
@@ -45,8 +48,6 @@ declare module 'splitpanes' {
   const Pane: ComponentOptions
   export { Splitpanes, Pane }
 }
-
-import * as vue from '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface ComponentCustomProperties {
     $frontmatter: any
