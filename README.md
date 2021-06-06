@@ -1,12 +1,25 @@
 # doc-utils
 
 ## dev
+
 ```bash
 npm i -g pnpm
 
-cd path/to/docs
-pnpm link path/to/doc-utils
+cd ..
+git clone https://github.com/windicss/docs.git
+cd docs
+```
 
-# start dev server in docs
+replace package.json
+
+```diff
+- "@windicss/vitepress-theme": "*",
++ "@windicss/vitepress-theme": "link:../doc-utils/packages/vitepress-theme",
+```
+
+```bash
+# reinstall deps
+pnpm install
+# run dev server
 pnpm dev
 ```
