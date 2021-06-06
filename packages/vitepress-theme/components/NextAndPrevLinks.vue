@@ -1,16 +1,16 @@
 <template>
   <div v-if="hasLinks" class="pt-4">
-    <div class="flex justify-between border-t-1px border-$c-divider pt-4">
-      <div class="flex flex-shrink-0 pl-3">
+    <div class="border-$c-divider flex border-t-1px pt-4 justify-between">
+      <div class="flex-1 pl-3">
         <a v-if="prev" class="link" :href="$withBase(prev.link)">
-          <carbon-arrow-left class="icon icon-prev" />
+          <carbon-arrow-left class="mr-3 icon" />
           <span class="text">{{ prev.text }}</span>
         </a>
       </div>
-      <div class="flex flex-shrink-0 pr-3">
+      <div class="flex-1 text-right pr-3">
         <a v-if="next" class="link" :href="$withBase(next.link)">
           <span class="text">{{ next.text }}</span>
-          <carbon-arrow-right class="icon icon-next" />
+          <carbon-arrow-right class="ml-3 icon" />
         </a>
       </div>
     </div>
@@ -34,9 +34,9 @@ const { hasLinks, prev, next } = useNextAndPrevLinks()
 
 .text {
   display: block;
-  white-space: nowrap;
+  /* white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
 }
 
 .icon {

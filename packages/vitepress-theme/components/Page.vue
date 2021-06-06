@@ -1,5 +1,5 @@
 <template>
-  <main class="px-4 md:px-8 pb-16 pt-1 container !max-w-780px mx-auto">
+  <main class="container mx-auto px-4 pt-1 pb-16 md:px-8 !max-w-780px">
     <slot name="top" />
 
     <div class="content">
@@ -22,6 +22,7 @@ import NextAndPrevLinks from './NextAndPrevLinks.vue'
 <style scoped>
 .content {
   padding-bottom: 1.5rem;
+  @apply break-words;
 }
 
 /* Utility classes should not wrap */
