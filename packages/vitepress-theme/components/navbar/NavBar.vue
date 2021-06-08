@@ -1,7 +1,7 @@
 <template>
-  <header class="navbar" :class="{'lg:ml-$sidebar-width': sidebarState}">
+  <header class="nav-bar" :class="{'lg:ml-$sidebar-width': sidebarState}">
     <NavBarTitle :class="{'!lg:hidden': sidebarState}" />
-    <div class="hidden lg:flex px-3">
+    <div class="px-3 hidden lg:flex">
       <NavBarLinks />
     </div>
 
@@ -27,7 +27,7 @@ defineProps({
 </script>
 
 <style scoped lang="postcss">
-.navbar {
+.nav-bar {
   @apply
     fixed top-0 inset-x-0 z-$z-index-navbar
     flex space-between align-center
