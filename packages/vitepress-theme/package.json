@@ -12,25 +12,25 @@
     "@docsearch/css": "^1.0.0-alpha.28",
     "@docsearch/js": "^1.0.0-alpha.28",
     "@docsearch/react": "^1.0.0-alpha.28",
-    "@vueuse/core": "^4.11.1",
-    "@vueuse/integrations": "^4.11.1",
+    "@vueuse/core": "^5.0.3",
+    "@vueuse/integrations": "^5.0.3",
     "@windicss/shared-components": "workspace:*",
     "axios": "^0.21.1",
-    "codemirror": "^5.61.1",
+    "codemirror": "^5.62.0",
     "codemirror-theme-vars": "^0.1.1",
     "json5": "^2.2.0",
     "lz-string": "^1.4.4",
-    "mitt": "^2.1.0",
+    "mitt": "^3.0.0",
     "prism-theme-vars": "^0.2.2",
-    "prismjs": "^1.23.0",
+    "prismjs": "^1.24.0",
     "splitpanes": "^3.0.4",
-    "vue": "^3.0.11",
+    "vue": "^3.1.4",
     "vue-board": "^0.0.5",
     "vue-demi": "^0.9.1",
-    "windicss": "^3.0.12"
+    "windicss": "^3.1.4"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.350",
-    "vitepress": "^0.14.0"
+    "@iconify/json": "^1.1.369",
+    "vitepress": "^0.15.6"
   }
 }
