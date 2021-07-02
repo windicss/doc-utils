@@ -1,6 +1,6 @@
 {
   "name": "@windicss/shared-components",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "windicss shared components",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -19,27 +19,27 @@
   "license": "MIT",
   "peerDependencies": {
     "vue": ">=3",
-    "windicss": "^2.5.9"
+    "windicss": ">=3"
   },
   "dependencies": {
-    "prismjs": "^1.23.0"
+    "prismjs": "^1.24.0"
   },
   "devDependencies": {
-    "@codemirror/autocomplete": "^0.18.5",
+    "@codemirror/autocomplete": "^0.18.8",
     "@codemirror/basic-setup": "^0.18.2",
     "@codemirror/closebrackets": "^0.18.0",
-    "@codemirror/commands": "^0.18.2",
+    "@codemirror/commands": "^0.18.3",
     "@codemirror/comment": "^0.18.1",
     "@codemirror/fold": "^0.18.1",
-    "@codemirror/gutter": "^0.18.3",
+    "@codemirror/gutter": "^0.18.4",
     "@codemirror/highlight": "^0.18.4",
     "@codemirror/history": "^0.18.1",
     "@codemirror/lang-css": "^0.18.0",
     "@codemirror/lang-html": "^0.18.1",
     "@codemirror/lang-javascript": "^0.18.0",
-    "@codemirror/language": "^0.18.1",
-    "@codemirror/legacy-modes": "^0.18.0",
-    "@codemirror/lint": "^0.18.3",
+    "@codemirror/language": "^0.18.2",
+    "@codemirror/legacy-modes": "^0.18.1",
+    "@codemirror/lint": "^0.18.4",
     "@codemirror/matchbrackets": "^0.18.0",
     "@codemirror/rectangular-selection": "^0.18.0",
     "@codemirror/search": "^0.18.4",
@@ -48,17 +48,17 @@
     "@codemirror/text": "^0.18.0",
     "@codemirror/theme-one-dark": "^0.18.1",
     "@codemirror/tooltip": "^0.18.4",
-    "@codemirror/view": "^0.18.14",
-    "@types/node": "^15.6.1",
+    "@codemirror/view": "^0.18.17",
+    "@types/node": "^15.14.0",
     "@types/prismjs": "^1.16.5",
     "bumpp": "^6.0.6",
-    "esbuild": "^0.12.5",
-    "esbuild-plugin-raw": "^0.1.3",
-    "tslib": "^2.2.0",
-    "tsup": "^4.11.1",
-    "typescript": "^4.3.2",
-    "vite": "^2.3.4",
-    "vue": "^3.0.11",
-    "windicss": "^3.0.12"
+    "esbuild": "^0.12.14",
+    "esbuild-plugin-raw": "^0.1.4",
+    "tslib": "^2.3.0",
+    "tsup": "^4.12.0",
+    "typescript": "^4.3.5",
+    "vite": "^2.3.8",
+    "vue": "^3.1.4",
+    "windicss": "^3.1.4"
   }
 }
