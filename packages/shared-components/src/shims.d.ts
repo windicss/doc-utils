@@ -11,5 +11,5 @@ declare module '*.vue' {
 
 declare module '*?raw' {
   const str: string
-  return str
+  export default str
 }

@@ -9,28 +9,28 @@
     "link": "pnpm link"
   },
   "dependencies": {
-    "@docsearch/css": "^1.0.0-alpha.28",
-    "@docsearch/js": "^1.0.0-alpha.28",
-    "@docsearch/react": "^1.0.0-alpha.28",
-    "@vueuse/core": "^5.0.3",
-    "@vueuse/integrations": "^5.0.3",
+    "@docsearch/css": "^3.0.0",
+    "@docsearch/js": "^3.0.0",
+    "@docsearch/react": "^3.0.0",
+    "@vueuse/core": "^7.7.0",
+    "@vueuse/integrations": "^7.7.0",
     "@windicss/shared-components": "workspace:*",
-    "axios": "^0.21.1",
-    "codemirror": "^5.62.0",
+    "axios": "^0.26.0",
+    "codemirror": "^5.65.2",
     "codemirror-theme-vars": "^0.1.1",
     "json5": "^2.2.0",
     "lz-string": "^1.4.4",
     "mitt": "^3.0.0",
     "prism-theme-vars": "^0.2.2",
-    "prismjs": "^1.24.0",
-    "splitpanes": "^3.0.4",
-    "vue": "^3.1.4",
+    "prismjs": "^1.27.0",
+    "splitpanes": "^3.1.1",
+    "vue": "^3.2.31",
     "vue-board": "^0.0.5",
-    "vue-demi": "^0.9.1",
-    "windicss": "^3.1.4"
+    "vue-demi": "^0.12.1",
+    "windicss": "^3.5.1"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.369",
-    "vitepress": "^0.15.6"
+    "@iconify/json": "^2.1.10",
+    "vitepress": "^0.22.3"
   }
 }

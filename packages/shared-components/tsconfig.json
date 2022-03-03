@@ -9,11 +9,7 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
     "noUnusedLocals": true,
-    "types": ["vite/client", "node"],
   },
-  "exclude": [
-    "**/dist/**"
-  ]
+  "include": ["src"]
 }
