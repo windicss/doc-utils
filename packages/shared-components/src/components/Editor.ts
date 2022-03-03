@@ -1,4 +1,4 @@
-import { defineComponent, h, nextTick, onMounted, ref, onUnmounted } from 'vue'
+import { defineComponent, h, nextTick, onMounted, onUnmounted, ref } from 'vue'
 import { EditorState } from '@codemirror/state'
 import { EditorView, ViewPlugin } from '@codemirror/view'
 import { StreamLanguage } from '@codemirror/stream-parser'
@@ -70,6 +70,7 @@ export default defineComponent({
       })
     }
     onMounted(async() => {
+      // eslint-disable-next-line vue/valid-next-tick
       await nextTick(async() => {
         await initEditor()
       })
