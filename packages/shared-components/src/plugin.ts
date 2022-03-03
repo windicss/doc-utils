@@ -1,5 +1,5 @@
-import { EditorView, highlightSpecialChars, drawSelection, keymap } from '@codemirror/view'
-import { EditorState, Compartment } from '@codemirror/state'
+import { EditorView, drawSelection, highlightSpecialChars, keymap } from '@codemirror/view'
+import { Compartment, EditorState } from '@codemirror/state'
 import { history, historyKeymap } from '@codemirror/history'
 import { foldGutter, foldKeymap } from '@codemirror/fold'
 import { indentOnInput } from '@codemirror/language'
@@ -66,7 +66,7 @@ export const hoverPreview = (processor: Processor) => {
         create() {
           const dom = document.createElement('div')
           const { highlightedCSS } = usePrismCSS(() => result.styleSheet.build())
-          dom.className = 'text-sm border p-2 rounded'
+          dom.className = 'text-sm p-2'
           dom.innerHTML = `<pre><code>${highlightedCSS.value}</code></pre>`
           return { dom }
         },
@@ -74,6 +74,7 @@ export const hoverPreview = (processor: Processor) => {
     }),
     EditorView.theme({
       '.cm-tooltip': {
+        borderRadius: '0.25rem',
         borderColor: 'var(--c-scrollbar)',
         background: 'var(--c-bg)',
       },
