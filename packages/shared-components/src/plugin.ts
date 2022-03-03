@@ -67,7 +67,7 @@ export const hoverPreview = (processor: Processor) => {
         create() {
           const dom = document.createElement('div')
           const { highlightedCSS } = usePrismCSS(() => result.styleSheet.build())
-          dom.className = 'text-sm border p-2 rounded !bg-dark-300'
+          dom.className = 'text-sm border p-2 rounded'
           dom.innerHTML = `<pre><code>${highlightedCSS.value}</code></pre>`
           return { dom }
         },

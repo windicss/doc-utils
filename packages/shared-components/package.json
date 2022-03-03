@@ -9,6 +9,10 @@
     "dist",
     "index.css"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/windicss/doc-utils"
+  },
   "scripts": {
     "prepublishOnly": "tsup",
     "build": "tsup",
