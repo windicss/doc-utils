@@ -5,7 +5,6 @@ export default defineConfig({
   entryPoints: ['src/index.ts'],
   format: ['cjs', 'esm'],
   dts: true,
-  // @ts-expect-error
-  esbuildPlugins: [RawPlugin.default()],
+  esbuildPlugins: [RawPlugin()],
   clean: true,
 })

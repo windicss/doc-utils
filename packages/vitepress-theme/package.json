@@ -30,7 +30,7 @@
     "windicss": "^3.5.1"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.10",
+    "@iconify/json": "^2.1.11",
     "vitepress": "^0.22.3"
   }
 }
